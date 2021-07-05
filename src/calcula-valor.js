@@ -20,7 +20,7 @@ function calcularPrestacoes (montante, numeroParcelas) {
   let diferenca = arredondar(montante - somaPrestacoes)
   let i = 0
   while (diferenca !== 0) {
-    resultado[i] = resultado[i] = 0.01
+    resultado[i] = resultado[i] + 0.01
     somaPrestacoes = resultado.reduce((a, t) => a + t)
     diferenca = arredondar(montante - somaPrestacoes)
     i++
