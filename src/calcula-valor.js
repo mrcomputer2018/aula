@@ -22,7 +22,7 @@ function calcularPrestacoes (montante, numeroParcelas) {
   while (diferenca !== 0) {
     resultado[i] = resultado[i] = 0.01
     somaPrestacoes = resultado.reduce((a, t) => a + t)
-    diferenca = montante - somaPrestacoes
+    diferenca = arredondar(montante - somaPrestacoes)
     i++
   }
   return resultado
