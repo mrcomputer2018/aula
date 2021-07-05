@@ -81,3 +81,9 @@ acertando os erros nos arquivos das pastas src e test.
   }
   
 - Excutar com npm run watch
+
+### Debugg no jest
+- Inserir a linha debugger no inicio do codigo de teste
+- digtar o comando "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand"
+para executar o debugg linha por linha do codigo
+- Acessar a aba inspect do Chrome
