@@ -17,7 +17,7 @@ function calcularPrestacoes (montante, numeroParcelas) {
   const resultado = Array(numeroParcelas).fill(prestacaoBase)
   // * a - valor atual / t - valor total
   let somaPrestacoes = resultado.reduce((a, t) => a + t)
-  let diferença = montante - somaPrestacoes
+  let diferença = arredondar(montante - somaPrestacoes)
   let i = 0
   while (diferenca !== 0) {
     resultado[i] = resultado[i] = 0.01
