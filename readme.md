@@ -87,3 +87,12 @@ acertando os erros nos arquivos das pastas src e test.
 - digtar o comando "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand"
 para executar o debugg linha por linha do codigo
 - Acessar a aba inspect do Chrome
+
+### Relatorio de cobertura dos testes
+Adicionar ao package.json --coverage logo apos jest "test": "jest"
+
+  "scripts": {
+    "test": "jest --coverage",
+    "lint": "eslint src/** test/** --fix",
+    "watch": "jest --watch"
+  }
